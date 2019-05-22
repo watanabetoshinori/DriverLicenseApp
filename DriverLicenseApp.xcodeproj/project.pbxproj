@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13402FE3229447BB00B5B284 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13402FE2229447BB00B5B284 /* AppDelegate.swift */; };
+		13402FE5229447BB00B5B284 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13402FE4229447BB00B5B284 /* ViewController.swift */; };
+		13402FE7229447BE00B5B284 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13402FE6229447BE00B5B284 /* Assets.xcassets */; };
+		13402FEA229447BE00B5B284 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13402FE8229447BE00B5B284 /* Main.storyboard */; };
+		13402FF72294483500B5B284 /* String+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13402FF42294483500B5B284 /* String+Regex.swift */; };
+		13402FF82294483500B5B284 /* TKSmartCard+Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13402FF52294483500B5B284 /* TKSmartCard+Command.swift */; };
+		13402FF92294483500B5B284 /* TKSmartCard+Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13402FF62294483500B5B284 /* TKSmartCard+Sync.swift */; };
+		13402FFD2294496000B5B284 /* TKSmartCard+DriverLicense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13402FFC2294496000B5B284 /* TKSmartCard+DriverLicense.swift */; };
+		13402FFF2294516F00B5B284 /* ASN1LengthParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13402FFE2294516F00B5B284 /* ASN1LengthParser.swift */; };
+		1381B6B522954B1F00882287 /* TLVRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1381B6B422954B1F00882287 /* TLVRecord.swift */; };
+		1381B6B722955F3000882287 /* TLVRecord+DriverLicense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1381B6B622955F3000882287 /* TLVRecord+DriverLicense.swift */; };
+		1381B6BA2295A88800882287 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 1381B6B92295A88800882287 /* LICENSE */; };
+		1381B6BC2295A88E00882287 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1381B6BB2295A88E00882287 /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		13402FDF229447BB00B5B284 /* DriverLicenseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DriverLicenseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13402FE2229447BB00B5B284 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		13402FE4229447BB00B5B284 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		13402FE6229447BE00B5B284 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		13402FE9229447BE00B5B284 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		13402FEB229447BE00B5B284 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13402FEC229447BE00B5B284 /* DriverLicenseApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DriverLicenseApp.entitlements; sourceTree = "<group>"; };
+		13402FF42294483500B5B284 /* String+Regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Regex.swift"; sourceTree = "<group>"; };
+		13402FF52294483500B5B284 /* TKSmartCard+Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TKSmartCard+Command.swift"; sourceTree = "<group>"; };
+		13402FF62294483500B5B284 /* TKSmartCard+Sync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TKSmartCard+Sync.swift"; sourceTree = "<group>"; };
+		13402FFC2294496000B5B284 /* TKSmartCard+DriverLicense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TKSmartCard+DriverLicense.swift"; sourceTree = "<group>"; };
+		13402FFE2294516F00B5B284 /* ASN1LengthParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASN1LengthParser.swift; sourceTree = "<group>"; };
+		1381B6B422954B1F00882287 /* TLVRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLVRecord.swift; sourceTree = "<group>"; };
+		1381B6B622955F3000882287 /* TLVRecord+DriverLicense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TLVRecord+DriverLicense.swift"; sourceTree = "<group>"; };
+		1381B6B92295A88800882287 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1381B6BB2295A88E00882287 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13402FDC229447BB00B5B284 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13402FD6229447BB00B5B284 = {
+			isa = PBXGroup;
+			children = (
+				1381B6B82295A87D00882287 /* Document */,
+				13402FE1229447BB00B5B284 /* Source */,
+				13402FE0229447BB00B5B284 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		13402FE0229447BB00B5B284 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13402FDF229447BB00B5B284 /* DriverLicenseApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13402FE1229447BB00B5B284 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				13402FE2229447BB00B5B284 /* AppDelegate.swift */,
+				13402FF32294480100B5B284 /* Modules */,
+				13402FFB2294484D00B5B284 /* DriverLicense */,
+				13402FFA2294484500B5B284 /* Utilities */,
+				13402FF2229447FB00B5B284 /* Supporting Files */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		13402FF2229447FB00B5B284 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				13402FE6229447BE00B5B284 /* Assets.xcassets */,
+				13402FEB229447BE00B5B284 /* Info.plist */,
+				13402FEC229447BE00B5B284 /* DriverLicenseApp.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13402FF32294480100B5B284 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				13402FE8229447BE00B5B284 /* Main.storyboard */,
+				13402FE4229447BB00B5B284 /* ViewController.swift */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		13402FFA2294484500B5B284 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1381B6B422954B1F00882287 /* TLVRecord.swift */,
+				1381B6B622955F3000882287 /* TLVRecord+DriverLicense.swift */,
+				13402FFE2294516F00B5B284 /* ASN1LengthParser.swift */,
+				13402FF42294483500B5B284 /* String+Regex.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		13402FFB2294484D00B5B284 /* DriverLicense */ = {
+			isa = PBXGroup;
+			children = (
+				13402FF62294483500B5B284 /* TKSmartCard+Sync.swift */,
+				13402FF52294483500B5B284 /* TKSmartCard+Command.swift */,
+				13402FFC2294496000B5B284 /* TKSmartCard+DriverLicense.swift */,
+			);
+			name = DriverLicense;
+			sourceTree = "<group>";
+		};
+		1381B6B82295A87D00882287 /* Document */ = {
+			isa = PBXGroup;
+			children = (
+				1381B6B92295A88800882287 /* LICENSE */,
+				1381B6BB2295A88E00882287 /* README.md */,
+			);
+			name = Document;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13402FDE229447BB00B5B284 /* DriverLicenseApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13402FEF229447BE00B5B284 /* Build configuration list for PBXNativeTarget "DriverLicenseApp" */;
+			buildPhases = (
+				13402FDB229447BB00B5B284 /* Sources */,
+				13402FDC229447BB00B5B284 /* Frameworks */,
+				13402FDD229447BB00B5B284 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DriverLicenseApp;
+			productName = DriverLicenseApp;
+			productReference = 13402FDF229447BB00B5B284 /* DriverLicenseApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13402FD7229447BB00B5B284 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Watanabe Toshinori";
+				TargetAttributes = {
+					13402FDE229447BB00B5B284 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 13402FDA229447BB00B5B284 /* Build configuration list for PBXProject "DriverLicenseApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 13402FD6229447BB00B5B284;
+			productRefGroup = 13402FE0229447BB00B5B284 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13402FDE229447BB00B5B284 /* DriverLicenseApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13402FDD229447BB00B5B284 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1381B6BA2295A88800882287 /* LICENSE in Resources */,
+				13402FE7229447BE00B5B284 /* Assets.xcassets in Resources */,
+				1381B6BC2295A88E00882287 /* README.md in Resources */,
+				13402FEA229447BE00B5B284 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13402FDB229447BB00B5B284 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13402FE5229447BB00B5B284 /* ViewController.swift in Sources */,
+				13402FF92294483500B5B284 /* TKSmartCard+Sync.swift in Sources */,
+				13402FFD2294496000B5B284 /* TKSmartCard+DriverLicense.swift in Sources */,
+				13402FE3229447BB00B5B284 /* AppDelegate.swift in Sources */,
+				13402FFF2294516F00B5B284 /* ASN1LengthParser.swift in Sources */,
+				13402FF82294483500B5B284 /* TKSmartCard+Command.swift in Sources */,
+				13402FF72294483500B5B284 /* String+Regex.swift in Sources */,
+				1381B6B522954B1F00882287 /* TLVRecord.swift in Sources */,
+				1381B6B722955F3000882287 /* TLVRecord+DriverLicense.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		13402FE8229447BE00B5B284 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13402FE9229447BE00B5B284 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		13402FED229447BE00B5B284 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		13402FEE229447BE00B5B284 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		13402FF0229447BE00B5B284 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Source/DriverLicenseApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Source/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.yourcompany.DriverLicenseApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		13402FF1229447BE00B5B284 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Source/DriverLicenseApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Source/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.yourcompany.DriverLicenseApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13402FDA229447BB00B5B284 /* Build configuration list for PBXProject "DriverLicenseApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13402FED229447BE00B5B284 /* Debug */,
+				13402FEE229447BE00B5B284 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13402FEF229447BE00B5B284 /* Build configuration list for PBXNativeTarget "DriverLicenseApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13402FF0229447BE00B5B284 /* Debug */,
+				13402FF1229447BE00B5B284 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 13402FD7229447BB00B5B284 /* Project object */;
+}

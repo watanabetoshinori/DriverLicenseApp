@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Application-->
+        <scene sceneID="JPo-4y-FX3">
+            <objects>
+                <application id="hnw-xV-0zn" sceneMemberID="viewController">
+                    <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+                        <items>
+                            <menuItem title="DriverLicenseApp" id="1Xt-HY-uBw">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="DriverLicenseApp" systemMenu="apple" id="uQy-DD-JDr">
+                                    <items>
+                                        <menuItem title="About DriverLicenseApp" id="5kV-Vb-QxS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
+                                        <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
+                                        <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
+                                        <menuItem title="Services" id="NMo-om-nkz">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
+                                        <menuItem title="Hide DriverLicenseApp" keyEquivalent="h" id="Olw-nP-bQN">
+                                            <connections>
+                                                <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Hide Others" keyEquivalent="h" id="Vdr-fp-XzO">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="hideOtherApplications:" target="Ady-hI-5gd" id="VT4-aY-XCT"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Show All" id="Kd2-mp-pUS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="unhideAllApplications:" target="Ady-hI-5gd" id="Dhg-Le-xox"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
+                                        <menuItem title="Quit DriverLicenseApp" keyEquivalent="q" id="4sb-4s-VLi">
+                                            <connections>
+                                                <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
+                    </connections>
+                </application>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="DriverLicenseApp" customModuleProvider="target"/>
+                <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="0.0"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="R2V-B0-nI4">
+            <objects>
+                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
+                    <window key="window" title="運転免許証" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="756" height="411"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <connections>
+                            <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
+                    </connections>
+                </windowController>
+                <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-28" y="323"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hIz-AP-VOD">
+            <objects>
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="DriverLicenseApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="m2S-Jp-Qdl">
+                        <rect key="frame" x="0.0" y="0.0" width="756" height="411"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <box fixedFrame="YES" borderType="line" title="ICカード" translatesAutoresizingMaskIntoConstraints="NO" id="xal-6i-mls">
+                                <rect key="frame" x="17" y="247" width="311" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <view key="contentView" id="fz6-dC-owG">
+                                    <rect key="frame" x="3" y="3" width="305" height="129"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="awX-Qf-1eK">
+                                            <rect key="frame" x="95" y="57" width="96" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="4文字" drawsBackground="YES" id="fnB-GO-RgO">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Cz-E2-8aI">
+                                            <rect key="frame" x="95" y="89" width="96" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="4文字" drawsBackground="YES" id="Shu-Zu-YEd">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jL0-1s-yLn">
+                                            <rect key="frame" x="8" y="92" width="80" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="PIN1" id="59T-wA-XzO">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CPc-54-xtS">
+                                            <rect key="frame" x="8" y="59" width="80" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="PIN2" id="cq6-fz-5WO">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YgO-e4-5zw">
+                                            <rect key="frame" x="89" y="15" width="160" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="push" title="データを取得" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="iBg-Rw-fC0">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" size="13" name=".HiraKakuInterface-W3"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="getData:" target="XfG-lQ-9wD" id="pCk-RH-xY3"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </view>
+                                <font key="titleFont" size="11" name=".HiraKakuInterface-W3"/>
+                            </box>
+                            <box fixedFrame="YES" title="表面" translatesAutoresizingMaskIntoConstraints="NO" id="Xyy-O8-iJ0">
+                                <rect key="frame" x="17" y="16" width="360" height="219"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <view key="contentView" id="4Nz-5d-xlt">
+                                    <rect key="frame" x="3" y="3" width="354" height="204"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0vI-A4-BE3">
+                                            <rect key="frame" x="235" y="29" width="102" height="126"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" id="3S1-2T-57M"/>
+                                        </imageView>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jLr-7n-oUo">
+                                            <rect key="frame" x="20" y="167" width="150" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Name" id="8GS-C6-Wak">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tis-Q1-Vfm">
+                                            <rect key="frame" x="182" y="167" width="154" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="Birth Day" id="tHn-oX-zrp">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OOc-qW-SlO">
+                                            <rect key="frame" x="18" y="135" width="152" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Issued Date" id="vfm-2D-q6J">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lGz-Uk-pY8">
+                                            <rect key="frame" x="18" y="101" width="152" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Expiration Date" id="y8w-rn-a2N">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nr3-nH-svU">
+                                            <rect key="frame" x="20" y="32" width="150" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="License Number" id="jVj-oe-Thz">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </subviews>
+                                </view>
+                                <font key="titleFont" size="11" name=".HiraKakuInterface-W3"/>
+                            </box>
+                            <box fixedFrame="YES" title="裏面" translatesAutoresizingMaskIntoConstraints="NO" id="JiB-j9-FNm">
+                                <rect key="frame" x="379" y="16" width="360" height="219"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <view key="contentView" id="4qz-PI-SYs">
+                                    <rect key="frame" x="3" y="3" width="354" height="204"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <scrollView fixedFrame="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKx-oB-LWA">
+                                            <rect key="frame" x="20" y="20" width="314" height="164"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <clipView key="contentView" ambiguous="YES" drawsBackground="NO" copiesOnScroll="NO" id="1vQ-YO-sF6">
+                                                <rect key="frame" x="0.0" y="0.0" width="314" height="164"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <textView ambiguous="YES" editable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="MYs-e5-I5H">
+                                                        <rect key="frame" x="0.0" y="0.0" width="314" height="164"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        <size key="minSize" width="314" height="164"/>
+                                                        <size key="maxSize" width="314" height="10000000"/>
+                                                        <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    </textView>
+                                                </subviews>
+                                            </clipView>
+                                            <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="04g-wv-n8Z">
+                                                <rect key="frame" x="-100" y="-100" width="240" height="16"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </scroller>
+                                            <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="Pao-73-Bid">
+                                                <rect key="frame" x="298" y="0.0" width="16" height="164"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </scroller>
+                                        </scrollView>
+                                    </subviews>
+                                </view>
+                                <font key="titleFont" size="11" name=".HiraKakuInterface-W3"/>
+                            </box>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="birthDayLabel" destination="tis-Q1-Vfm" id="RDA-zJ-Myx"/>
+                        <outlet property="expirationDateLabel" destination="lGz-Uk-pY8" id="dCo-to-8Fo"/>
+                        <outlet property="historyView" destination="MYs-e5-I5H" id="Rbe-Cr-QtE"/>
+                        <outlet property="issuedDateLabel" destination="OOc-qW-SlO" id="ibZ-dK-9hb"/>
+                        <outlet property="licenseNumberLabel" destination="nr3-nH-svU" id="QxY-cF-eZ7"/>
+                        <outlet property="nameLabel" destination="jLr-7n-oUo" id="E9u-uN-aCK"/>
+                        <outlet property="photoView" destination="0vI-A4-BE3" id="Phi-H2-qgH"/>
+                        <outlet property="pin1Field" destination="1Cz-E2-8aI" id="Sqt-sH-4Mm"/>
+                        <outlet property="pin2Field" destination="awX-Qf-1eK" id="7PD-Ug-cd7"/>
+                    </connections>
+                </viewController>
+                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-28" y="931.5"/>
+        </scene>
+    </scenes>
+</document>
